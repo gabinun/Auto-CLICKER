@@ -5,6 +5,7 @@ mouse, clicking = Controller(), False
 
 while True:
     if keyboard.is_pressed('`'):
+        keyboard.block_key('`')
         clicking = not clicking
         time.sleep(0.2)
 
