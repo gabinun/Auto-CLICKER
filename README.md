@@ -5,7 +5,7 @@ So I saw that there aren't any good auto-clickers out there, so I made this one 
 
 1. Download the `Auto Clicker.py` file.
 2. Download and install Python, making sure to:
-   - Check the box that says "Add Python to system PATH"
+   - Check the box that says "Add Python to System PATH"
    - Select "Pip" during installation.
 3. Open a terminal (or Command Prompt) and install the necessary libraries by running:
    ```bash
