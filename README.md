@@ -17,4 +17,6 @@ Once the dependencies are installed, run the following command to create the .ex
 ```bash
 pyinstaller --onefile --noconsole "C:\path\to\your\Auto Clicker.py"
 ```
+   Great now your Executable is ready
+
 If you don't want to compile it yourself, you can download the precompiled `.exe` file from the [Release page](link_to_release_page) and run it directly!
