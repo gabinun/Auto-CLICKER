@@ -20,3 +20,5 @@ pyinstaller --onefile --noconsole "C:\path\to\your\Auto Clicker.py"
    Great now your Executable is ready
 
 If you don't want to compile it yourself, you can download the precompiled `.exe` file from the [Release page](https://github.com/gabinun/Auto-CLICKER/releases) and run it directly!
+
+I also made a auto clicker with c++ in the c++ branch
