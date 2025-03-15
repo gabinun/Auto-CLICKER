@@ -5,7 +5,8 @@ std::atomic<bool> clicking(false);
 HHOOK keyboardHook;
 
 LRESULT CALLBACK KeyboardProc(int n, WPARAM w, LPARAM l) {
-    if (((KBDLLHOOKSTRUCT*)l)->vkCode == VK_OEM_3) {
+    KBDLLHOOKSTRUCT* k = (KBDLLHOOKSTRUCT*)l;
+    if (n >= 0 && k->vkCode == VK_OEM_3) {
         if (w == WM_KEYDOWN) clicking = !clicking;
         return 1;
     }
@@ -21,7 +22,7 @@ int main() {
             mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
             Sleep(5);
         } else {
-            Sleep(50);
+            WaitMessage();
         }
         while (PeekMessage(&msg, 0, 0, 0, PM_REMOVE)) DispatchMessage(&msg);
     }
