@@ -1,1 +1,1 @@
-I also built an auto-clicker in C++, but I deleted the source code, so I don’t have it anymore. It is still way better than the Python version!
+This is an auto clicker with c++ you can complie it yourself by downlaoding the autoclicker.cpp or just download the complied .exe
